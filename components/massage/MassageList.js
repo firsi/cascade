@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Box, Grid, ResponsiveContext } from "grommet";
+import { Box, ResponsiveContext } from "grommet";
 import { LINKS } from "../../util/constants";
 import SimpleCardImage from "../miscellaneous/cards/SimpleCardImage";
 import TextBlock from "../miscellaneous/text/TextBlock";
@@ -41,6 +41,7 @@ const MassageList = () => {
             label="Réflexologie"
             imgSrc="/reflexologie.jpg"
             href={LINKS.massage}
+            margin={{ bottom: size === "small" ? "large" : "initial" }}
           >
             c’est une médecine douce de plus en plus utilisée, car elle aide à
             apaiser les tensions, le stress, les problèmes de sommeil. La
@@ -53,6 +54,7 @@ const MassageList = () => {
             label="Manupuncture"
             imgSrc="/manupuncture.jpg"
             href={LINKS.massage}
+            margin={{ bottom: size === "small" ? "large" : "initial" }}
           >
             la Manupuncture peut jouer un rôle utile en complément de la
             médecine occidentale, en allégeant notable­ment les douleurs, en
@@ -66,6 +68,7 @@ const MassageList = () => {
             label="Acupuncture"
             imgSrc="/acupuncture.jpg"
             href={LINKS.massage}
+            margin={{ bottom: size === "small" ? "large" : "initial" }}
           >
             Le massage est souvent associé à un moment de détente et de
             relaxation, mais les bienfaits de la massothérapie sont bien plus
@@ -78,6 +81,7 @@ const MassageList = () => {
             label="Fitness"
             imgSrc="/fitness.jpg"
             href={LINKS.massage}
+            margin={{ bottom: size === "small" ? "large" : "initial" }}
           >
             c’est une méthode très efficace à associer aux régimes minceur pour
             retrouver la forme. Ensuite, c’est une technique de médecine douce

@@ -10,11 +10,12 @@ const Restaurant = () => {
       height={{ min: "initial", max: "650px" }}
       pad={{ vertical: "medium" }}
       fill
+      margin={{ bottom: "large" }}
     >
       <Box
         direction={size === "small" ? "column" : "row-reverse"}
         pad={{ horizontal: "large" }}
-        height={{ min: "initial" }}
+        height={{ min: "initial", max: "100%" }}
         fill
       >
         <TextBlock label="Doux">
@@ -25,18 +26,20 @@ const Restaurant = () => {
           demeure ? Pas de soucis, nous effectuons des livraisons à domicile.
         </TextBlock>
         <Box
-          height={{ min: "initial", max: "600px" }}
+          height={{ min: "initial", max: size === "small" ? "300px" : "600px" }}
           basis={size !== "small" && "1/2"}
           direction="row"
           flex
           align="center"
           pad={{ horizontal: "medium", vertical: "large" }}
           fill
+          overflow="hidden"
         >
           <Image
-            style={{ objectFit: "contain" }}
             alt="plats d'igname pilée "
             src="agoun-plats.png"
+            fit="contain"
+            style={{ maxHeight: "100%" }}
           />
         </Box>
       </Box>
